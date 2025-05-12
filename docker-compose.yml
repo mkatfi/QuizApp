@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  react-app:
+    image: quizapp  
+    container_name: quizapp
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"  
+    volumes:
+      - .:/usr/src/quiz-app 
+    networks:
+      - quizapp_net  
+
+networks:
+  quizapp_net:       
+    driver: bridge
