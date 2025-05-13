@@ -41,7 +41,18 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-4 min-h-screen flex flex-col">
+    <div className="max-w-3xl mx-auto p-10 min-h-screen flex flex-col justify-between animate-fadeIn">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+        Quiz Time!
+      </h1>
+      <div className="text-center mb-4">
+        <p className="text-lg text-gray-700">
+          Question {currentQuestionIndex + 1} of {quizQuestions.length}
+        </p>
+        <p className="text-lg  text-gray-700">
+          Score: {score} / {quizQuestions.length} 
+        </p>
+      </div>
       <div className="flex justify-between items-center mb-6">
         <ProgressBar 
           current={currentQuestionIndex + 1} 

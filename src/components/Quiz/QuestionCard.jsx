@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/index.css'; 
 const QuestionCard = ({ question, selectedOption, onSelect }) => {
     return (
-      <div className="animate-fadeIn">
+      <div className="bg-white m-5 p-5 rounded-lg animate-fadeIn">
         <h2 className="text-xl font-bold text-gray-800 mb-6">
           {question.question}
         </h2>

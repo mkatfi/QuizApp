@@ -18,7 +18,7 @@ const ResultsPage = () => {
   else message = "Keep practicing! 📚";
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-200 via-purple-200 to-blue-100 p-4">
       <div className="bg-white p-8 rounded-xl shadow-md text-center max-w-md w-full">
         <h1 className="text-3xl font-bold text-purple-600 mb-2">Quiz Completed!</h1>
         <p className="text-lg mb-6">{message}</p>

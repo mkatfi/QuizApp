@@ -16,7 +16,7 @@
   /* Additional custom styles */
   body {
     font-family: 'Inter', sans-serif;
-    /* background-color: #f9f9f9; */
+    background-color: var(--tw-gradient-via-position:);
     color: #333;
   }
   .inin{
